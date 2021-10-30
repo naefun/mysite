@@ -1,0 +1,8 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/pixeloce/public_html/projects/personalSite
+    - /bin/cp -R css $DEPLOYPATH
+    - /bin/cp -R imgs $DEPLOYPATH
+    - /bin/cp -R js $DEPLOYPATH
+    - /bin/cp index.html $DEPLOYPATH
