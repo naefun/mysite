@@ -1,0 +1,94 @@
+:root {
+    /* 
+        how to use:
+            property: var(--custom-property-name);
+    */
+    --my-primary-color: #090909;
+    --my-secondary-color: #909090;
+    --my-tertiary-color: #6D6D6D;
+    --my-highlight-color: #ff5656;
+}
+  
+body {
+    font-family: 'Rubik', sans-serif;
+    overflow-x: hidden;
+}
+
+.hero {
+    font-family: 'Rubik', sans-serif;
+    margin-top: 4rem;
+}
+.hero h1, h2, span a {
+    font-weight: bold;
+}
+.hero h1 {
+    font-size: 2.7rem;
+    color: var(--my-tertiary-color);
+}
+.hero h1 span {
+    color: var(--my-highlight-color);
+}
+.hero h2 {
+    font-size: 1.8rem;
+    color: var(--my-secondary-color);
+}
+.hero p {
+    color: var(--my-tertiary-color);
+    margin-top: 1.7rem;
+    line-height: 1.7rem;
+}
+.hero span a {
+    color: var(--my-highlight-color);
+}
+.hero .wrapper {
+    max-width: 35rem;
+}
+
+.my-button {
+    margin-top: 1.5rem;
+    color: #fff;
+    background-color: var(--my-highlight-color);
+    border-color: var(--my-highlight-color);
+}
+.my-button:hover {
+    color: #fff;
+    background-color: rgb(253, 70, 48);
+    border-color: rgb(252, 64, 35);
+}
+.my-button:active {
+    color: #fff;
+
+    background-color: rgb(252, 64, 35);
+    border-color: rgb(252, 59, 23);
+}
+.my-button:focus {
+    color: #fff;
+    background-color: rgb(253, 70, 58);
+    border-color: rgb(252, 64, 35);
+    box-shadow: 0 0 0 .25rem rgba(255, 108, 86,.5);
+}
+.my-button:active:focus {
+    box-shadow: 0 0 0 .25rem rgba(255, 108, 86,.5);
+}
+
+.off-center {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+@media only screen and (min-width: 769px) {
+    .off-center {
+        margin-right: 20%;
+    }
+}
+
+#svg-shape {
+    max-width: 40rem;
+    display: inline-block;
+    position: absolute;
+    top: 4rem;
+    right: -20rem;
+    z-index: -1;
+    fill: rgb(255, 222, 216);
+}
