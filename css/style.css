@@ -84,11 +84,17 @@ body {
 }
 
 #svg-shape {
-    max-width: 40rem;
+    max-width: 40vw;
     display: inline-block;
     position: absolute;
-    top: 4rem;
-    right: -20rem;
+    top: 30vh;
+    right: -60vw;
     z-index: -1;
     fill: rgb(255, 222, 216);
+}
+
+.nav-item {
+    text-align: center;
+    padding-top: .6rem;
+    padding-bottom: .6rem
 }
