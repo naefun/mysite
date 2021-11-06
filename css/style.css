@@ -23,6 +23,10 @@ body {
     color: var(--my-tertiary-color);
 }
 
+a {
+    cursor: pointer;
+}
+
 .hero {
     font-family: 'Rubik', sans-serif;
     margin-top: 4rem;
@@ -208,8 +212,8 @@ body {
     position: fixed;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     top: 0px;
     right: 0px;
     /* display: none; */
@@ -219,6 +223,7 @@ body {
     border: 5px solid var(--my-highlight-color);
     padding: 2rem;
     max-width: 35rem;
+    width: 100%;
     border-radius: 10px;
     z-index: 10;
 }
