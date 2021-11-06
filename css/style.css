@@ -11,6 +11,10 @@
     --my-window-close-color: #FF5B56;
     --my-window-minimise-color: #E7C029;
     --my-window-maximise-color: #51C12A;
+
+    --my-html-color: #e65127;
+    --my-js-color: #e7a328;
+    --my-css-color: #0c73b8;
 }
   
 body {
@@ -199,7 +203,44 @@ body {
     background-image: url(../imgs/charliethealiengame.jpg);
 }
 
+.showcase-info-popup-container {
+    display: none;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+    right: 0px;
+    /* display: none; */
+}
+.showcase-info-popup {
+    background-color: #151821;
+    border: 5px solid var(--my-highlight-color);
+    padding: 2rem;
+    max-width: 35rem;
+    border-radius: 10px;
+    z-index: 10;
+}
+.showcase-info-popup .window-buttons {
+    cursor: pointer;
+}
+.showcase-info-popup h2 {
+    color: var(--my-highlight-color);
+}
+.popup-icons {
+    font-size: 3rem;
+}
 
+.html-color {
+    color: var(--my-html-color);
+}
+.js-color {
+    color: var(--my-js-color);
+}
+.css-color {
+    color: var(--my-css-color);
+}
 
 
 
