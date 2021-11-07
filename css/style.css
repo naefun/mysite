@@ -7,6 +7,7 @@
     --my-secondary-color: #823838;
     --my-tertiary-color: #eee;
     --my-highlight-color: #ff5656;
+    --my-background-color: #151821;
 
     --my-window-close-color: #FF5B56;
     --my-window-minimise-color: #E7C029;
@@ -15,6 +16,8 @@
     --my-html-color: #e65127;
     --my-js-color: #e7a328;
     --my-css-color: #0c73b8;
+    --my-java-color: #507b97;
+    --my-csharp-color: #a178da;
 }
   
 body {
@@ -59,7 +62,7 @@ a {
 .hero .wrapper {
     max-width: 35rem;
 
-    background: #151821;
+    background: var(--my-background-color);
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 12px 12px 20px #000000a1;
@@ -206,6 +209,9 @@ a {
 #showcase-item-3::before {
     background-image: url(../imgs/charliethealiengame.jpg);
 }
+#showcase-item-4::before {
+    background-image: url(../imgs/ezproj.jpg);
+}
 
 .showcase-info-popup-container {
     display: none;
@@ -219,7 +225,7 @@ a {
     /* display: none; */
 }
 .showcase-info-popup {
-    background-color: #151821;
+    background-color: var(--my-background-color);
     border: 5px solid var(--my-highlight-color);
     padding: 2rem;
     max-width: 35rem;
@@ -235,6 +241,9 @@ a {
 }
 .popup-icons {
     font-size: 3rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
 }
 
 .html-color {
@@ -246,6 +255,25 @@ a {
 .css-color {
     color: var(--my-css-color);
 }
+.java-color {
+    color: var(--my-java-color);
+}
+.csharp-color {
+    color: var(--my-csharp-color);
+    background-image: url(../imgs/csharp.svg);
+    filter: invert(70%) sepia(66%) saturate(3776%) hue-rotate(218deg) brightness(89%) contrast(91%);
+    width: 3rem;
+    height: 3rem;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.python-color {
+    background: rgb(52,108,153);
+    background: linear-gradient(135deg, rgba(52,108,153,1) 0%, rgba(52,108,153,1) 35%, rgba(255,205,58,1) 65%, rgba(255,205,58,1) 100%); 
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 
 
@@ -255,7 +283,7 @@ a {
 
 footer {
     margin-top: 5rem;
-
+    background-color: var(--my-background-color);
     display: flex;
     justify-content: center;
     align-items: center;
