@@ -125,7 +125,7 @@ a {
 .nav-item {
     text-align: center;
     padding-top: .6rem;
-    padding-bottom: .6rem
+    padding-bottom: .6rem;
 }
 
 
@@ -273,6 +273,7 @@ a {
     background: linear-gradient(135deg, rgba(52,108,153,1) 0%, rgba(52,108,153,1) 35%, rgba(255,205,58,1) 65%, rgba(255,205,58,1) 100%); 
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 
