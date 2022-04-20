@@ -79,6 +79,8 @@ async function handleSubmit() {
   } catch (exception) {
     console.log(exception);
   }
+
+  grecaptcha.reset();
 }
 
 document.getElementById("submit-form").addEventListener("click", function (e) {
