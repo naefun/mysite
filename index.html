@@ -1,119 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet"> 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css?v=1.0.1">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css?v=1.0.1" />
     <script src="./js/showcaseItemDefinition.js?v=1.0.0" defer></script>
     <script src="./js/showcaseItems.js?v=1.0.0" defer></script>
     <script src="./js/index.js?v=1.0.0" defer></script>
-    <script src="https://kit.fontawesome.com/c92feb7b5a.js" crossorigin="anonymous"></script>
+    <script src="./js/contactForm.js?v=1.0.0" defer></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script
+      src="https://kit.fontawesome.com/c92feb7b5a.js"
+      crossorigin="anonymous"
+    ></script>
     <title>NathanDEV</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="./imgs/logo.svg" alt="" width="65" height="65">
-            </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+      <div class="container-fluid">
+        <a class="my-brand" href="#">
+          nathan<span class="brand-second-colour">dev</span></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://nathandev.com/static/media/Nathan%20Byrne.683800a1.pdf"
+                target="_blank"
+                >CV</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://github.com/naefun"
+                target="_blank"
+                >GitHub</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://www.linkedin.com/in/nathan-byrne-813930118/"
+                target="-blank"
+                >LinkedIn</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-form">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container hero">
+      <div class="wrapper">
+        <div class="window-buttons">
+          <div class="window-close"></div>
+          <div class="window-minimise"></div>
+          <div class="window-maximise"></div>
+        </div>
+        <h1>Hi, I'm <span>Nathan</span></h1>
+        <h2>I like to create things with code.💻</h2>
+        <p>
+          Many of my projects can be found on my
+          <span
+            ><a href="https://github.com/naefun" target="_blank"
+              >GitHub</a
+            ></span
+          >. I like to work on things from the back-end through to the front-end
+          and everything in between, so if you’re looking to recruit, then have
+          a look at my
+          <span
+            ><a
+              href="https://nathandev.com/static/media/Nathan%20Byrne.683800a1.pdf"
+              target="_blank"
+              >CV</a
+            ></span
+          >. If you just want to know more about me, then visit my
+          <span><a href="#">about me</a></span> page. Or if you fancy a nice
+          relaxing get-away in the mediterranean, then you’ve visited the wrong
+          page... <span><a href="#">sorry</a></span
+          >.
+        </p>
+        <a href="#contact-form" class="btn btn-primary my-button">CONTACT</a>
+      </div>
+    </div>
+
+    <div class="spacer"></div>
+
+    <div class="showcase-bg" id="projects">
+      <div class="container showcase">
+        <div class="showcase-container">
+          <div class="showcase-item filter-bg" id="showcase-item-1">
+            <div class="showcase-item-main"></div>
+            <div class="showcase-item-secondary">
+              <a href="https://github.com/naefun/portfolio-site" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                href="https://nathandev.com/projects/portfoliosite/"
+                target="_blank"
+                ><i class="fa-solid fa-eye"></i
+              ></a>
+              <a
+                ><i class="fa-solid fa-circle-info showcase-info-button"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="showcase-item filter-bg" id="showcase-item-2">
+            <div class="showcase-item-main"></div>
+            <div class="showcase-item-secondary">
+              <a
+                href="https://github.com/naefun/underpressureespresso"
+                target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                href="https://nathandev.com/projects/underpressureespresso/"
+                target="_blank"
+                ><i class="fa-solid fa-eye"></i
+              ></a>
+              <a
+                ><i class="fa-solid fa-circle-info showcase-info-button"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="showcase-item filter-bg" id="showcase-item-3">
+            <div class="showcase-item-main"></div>
+            <div class="showcase-item-secondary">
+              <a href="https://www.charliethealien.co.uk/" target="_blank"
+                ><i class="fa-solid fa-eye"></i
+              ></a>
+              <a
+                ><i class="fa-solid fa-circle-info showcase-info-button"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="showcase-item filter-bg" id="showcase-item-4">
+            <div class="showcase-item-main"></div>
+            <div class="showcase-item-secondary">
+              <a href="https://github.com/naefun/ezproj" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                ><i class="fa-solid fa-circle-info showcase-info-button"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="showcase-info-popup-container" id="popup-container">
+      <div class="showcase-info-popup" id="popup">
+        <div class="window-buttons">
+          <div class="window-close" id="window-close-button"></div>
+          <div class="window-minimise" id="window-minimise-button"></div>
+          <div class="window-maximise" id="window-maximise-button"></div>
+        </div>
+        <h2 id="popup-title">Title of the project</h2>
+        <p id="minimise-text">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur
+          totam, deleniti officiis aliquam aperiam laudantium quos, excepturi
+          accusantium perspiciatis voluptatem commodi repellat id cum? Atque
+          debitis sint dolores enim quibusdam.
+        </p>
+        <div class="popup-icons" id="popup-icons">
+          <i class="fa-brands fa-html5 html-color"></i>
+          <i class="fa-brands fa-css3-alt css-color"></i>
+          <i class="fa-brands fa-js-square js-color"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact">
+      <form id="contact-form" class="my-contact-form">
+        <div class="form-group">
+          <label for="emailInput">Email address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="emailInput"
+            aria-describedby="emailHelp"
+            placeholder="Enter email"
+            required
+          />
+          <small id="emailHelp" class="form-text text-muted"
+            >Your email will never be shared with anyone else.</small
+          >
+        </div>
+        <div class="form-group">
+          <label for="nameInput">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="nameInput"
+            placeholder="Your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="subjectInput">Subject</label>
+          <input
+            type="text"
+            class="form-control"
+            id="subjectInput"
+            placeholder="Subject"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="messageInput">Message</label>
+          <textarea
+            class="form-control"
+            id="messageInput"
+            rows="3"
+            required
+          ></textarea>
+        </div>
+        <div
+          class="g-recaptcha"
+          data-sitekey="6LdFVIEfAAAAAD1Cknt0qdrSNBUCy7J3p-QVS-Vm"
+          data-callback="captchaVerified"
+          data-expired-callback="captchaExpired"
+        ></div>
+        <div class="form-group">
+          <button
+            type="submit"
+            class="btn btn-primary my-button no-top-margin disable-button"
+            id="submit-form"
+          >
+            Submit
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Quite useless link</a>
-              </li>
-            </ul>
-          </div>
         </div>
-      </nav>
-
-        <div class="container hero">
-              <div class="wrapper">
-                  <div class="window-buttons">
-                    <div class="window-close"></div>
-                    <div class="window-minimise"></div>
-                    <div class="window-maximise"></div>
-                  </div>
-                  <h1>Hi, I'm <span>Nathan</span></h1>
-                  <h2>I like to create things with code.💻</h2>
-                  <p>Many of my projects can be found on my <span><a href="#">GitHub</a></span>. I like to work on things from the back-end through to the front-end and everything in between, so if you’re looking to recruit, then have a look at my <span><a href="#">CV</a></span>. If you just want to know more about me, then visit my <span><a href="#">about me</a></span> page. Or if you fancy a nice relaxing get-away in the mediterranean, then you’ve visited the wrong page... <span><a href="#">sorry</a></span>.</p>
-                  <button type="button" class="btn btn-primary my-button">CONTACT</button>
-              </div>
+        <div class="alert alert-danger hidden" id="form-alert" role="alert">
+          This is a danger alert—check it out!
         </div>
+      </form>
+    </div>
 
-        <div class="spacer"></div>
+    <footer>
+      <p>Made by 🖐️ - by Nathan</p>
+    </footer>
 
-        <div class="showcase-bg">
-          <div class="container showcase">
-            <div class="showcase-container">
-              <div class="showcase-item filter-bg" id="showcase-item-1">
-                <div class="showcase-item-main"></div>
-                <div class="showcase-item-secondary">
-                  <a href="https://github.com/naefun/portfolio-site" target="_blank"><i class="fa-brands fa-github"></i></a>
-                  <a href="https://nathandev.com/projects/portfoliosite/" target="_blank"><i class="fa-solid fa-eye"></i></a>
-                  <a><i class="fa-solid fa-circle-info showcase-info-button"></i></a>
-                </div>
-              </div>
-  
-              <div class="showcase-item filter-bg" id="showcase-item-2">
-                <div class="showcase-item-main"></div>
-                <div class="showcase-item-secondary">
-                  <a href="https://github.com/naefun/underpressureespresso" target="_blank"><i class="fa-brands fa-github"></i></a>
-                  <a href="https://nathandev.com/projects/underpressureespresso/" target="_blank"><i class="fa-solid fa-eye"></i></a>
-                  <a><i class="fa-solid fa-circle-info showcase-info-button"></i></a>
-                </div>
-              </div>
-              
-              <div class="showcase-item filter-bg" id="showcase-item-3">
-                <div class="showcase-item-main"></div>
-                <div class="showcase-item-secondary">
-                  <a href="https://www.charliethealien.co.uk/" target="_blank"><i class="fa-solid fa-eye"></i></a>
-                  <a><i class="fa-solid fa-circle-info showcase-info-button"></i></a>
-                </div>
-              </div>
-              
-              <div class="showcase-item filter-bg" id="showcase-item-4">
-                <div class="showcase-item-main"></div>
-                <div class="showcase-item-secondary">
-                  <a href="https://github.com/naefun/ezproj" target="_blank"><i class="fa-brands fa-github"></i></a>
-                  <a><i class="fa-solid fa-circle-info showcase-info-button"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="showcase-info-popup-container" id="popup-container">
-          <div class="showcase-info-popup" id="popup">
-            <div class="window-buttons">
-              <div class="window-close" id="window-close-button"></div>
-              <div class="window-minimise" id="window-minimise-button"></div>
-              <div class="window-maximise" id="window-maximise-button"></div>
-            </div>
-            <h2 id="popup-title">Title of the project</h2>
-            <p id="minimise-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur totam, deleniti officiis aliquam aperiam laudantium quos, excepturi accusantium perspiciatis voluptatem commodi repellat id cum? Atque debitis sint dolores enim quibusdam.</p>
-            <div class="popup-icons" id="popup-icons">
-              <i class="fa-brands fa-html5 html-color"></i>
-              <i class="fa-brands fa-css3-alt css-color"></i>
-              <i class="fa-brands fa-js-square js-color"></i>
-            </div>
-          </div>
-        </div>
-
-
-
-        <footer>
-          <p>Made by 🖐️ - by Nathan</p>
-        </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
