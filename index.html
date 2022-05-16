@@ -17,6 +17,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./css/style.css?v=1.0.1" />
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
     <script src="./js/showcaseItemDefinition.js?v=1.0.0" defer></script>
     <script src="./js/showcaseItems.js?v=1.0.0" defer></script>
     <script src="./js/index.js?v=1.0.0" defer></script>
@@ -26,6 +27,9 @@
       src="https://kit.fontawesome.com/c92feb7b5a.js"
       crossorigin="anonymous"
     ></script>
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <script src="./js/pythonReplListener.js?v=1.0.0" defer></script>
+
     <title>NathanDEV</title>
   </head>
   <body>
@@ -205,6 +209,23 @@
           <i class="fa-brands fa-html5 html-color"></i>
           <i class="fa-brands fa-css3-alt css-color"></i>
           <i class="fa-brands fa-js-square js-color"></i>
+        </div>
+      </div>
+    </div>
+
+    <div id="dim-background" class="dim-background hide-element"></div>
+    <div id="python-repl" class="hide-element python-repl-container">
+      <div id="python-repl-window" class="my-python-repl">
+        <div class="window-buttons">
+          <div id="repl-close-button" class="window-close hover-pointer"></div>
+          <div
+            id="repl-maximise-button"
+            class="window-maximise hover-pointer"
+          ></div>
+          <p>Write some python</p>
+        </div>
+        <div class="repl-container">
+          <py-repl theme="dark" id="my-repl" auto-generate="true"></py-repl>
         </div>
       </div>
     </div>
