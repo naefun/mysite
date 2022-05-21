@@ -129,6 +129,7 @@ span a {
   text-align: center;
   padding-top: 0.6rem;
   padding-bottom: 0.6rem;
+  margin: auto;
 }
 
 .my-brand {
@@ -361,7 +362,7 @@ footer {
   width: 100%;
   background-color: var(--my-background-color);
   border-radius: 10px;
-  overflow-y: scroll;
+  overflow-y: auto;
   box-shadow: 0px 6px 15px 0px #000000b0;
 }
 
@@ -419,4 +420,12 @@ footer {
 
 .hide-element {
   display: none;
+}
+
+.my-nav {
+  align-items: center;
+}
+
+.call-to-action a {
+  margin-top: 0;
 }
